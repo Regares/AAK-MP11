@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+    printf("Введите стартовые целые значения переменных A и B: ");
+    scanf("%d%d", &a, &b);
+    if (a == b)
+    {
+        a = 0;
+        b = 0;
+    }
+    else
+    {
+        if (a > b)
+        {
+            b = a;
+        }
+        else
+        {
+            a = b;
+        }
+    }
+    printf("Значения пeрeмeнныx A: %d B: %d", a, b);
+    return 0;
+}
