@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, b, c, res;
+    printf("Введите три числа: ");
+    scanf("%d%d%d", &a, &b, &c);
+    if (a >= b)
+    {
+        if (b >= c)
+        {
+            res = a + b;
+        }
+        else if (c >= a)
+        {
+            res = a + c;
+        }
+    }
+    else
+    {
+        res = b + c;
+    }
+    printf("Сумма двух наибольших чисел равна: %d", res);
+    return 0;
+}
