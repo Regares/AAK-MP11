@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int xa, xb, xc, ya, yb, yc, sab, sac;
+    printf("Введите координаты трех точек (x1, y1 и тд): ");
+    scanf("%d%d%d%d%d%d", &xa, &ya, &xb, &yb, &xc, &yc);
+    sab = sqrt(pow((xa - xb), 2) + pow((ya - yb), 2));
+    sac = sqrt(pow((xa - xc), 2) + pow((ya - yc), 2));
+    if (sac > sab)
+    {
+        printf("Ближе к точке A точка B и расстояние равно: %d", sab);
+    }
+    else if (sab > sac)
+    {
+        printf("Ближе к точке A точка C и расстояние равно: %d", sac);
+    }
+    else
+    {
+        printf("К точке A одинаково близко обе точки и B и C. Минимальное расстояние до точки А: %d", sab);
+    }
+    return 0;
+}
